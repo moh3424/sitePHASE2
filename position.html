@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
     <!-- font awesome pour les logos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <title>Site PHASE 2 - accueil</title>
+    <title>Site PHASE 2 - position</title>
     <!-- la description qui s'affiche sur un résultat de recherche google -->
     <meta name="description" content="Site de la phase 2 Papaoumar Mbaye 2018/2019">
     <!-- les mots clefs utiles pour les moteurs de recherches -->
@@ -44,11 +44,11 @@
         <nav>
             <!-- zone du menu les liens pour passer de pages en pages -->
           <div class="ancreNAV">
-                <a href="index.html" title="Accueil" class="active">Accueil</a>
+                <a href="index.html" title="Accueil">Accueil</a>
                 <a href="texte.html" title="Texte">Texte</a>
                 <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
                 <a href="image.html" title="Image">Image</a>
-                <a href="position.html" title="Position">Position</a>
+                <a href="position.html" title="Position" class="active">Position</a>
                 <a href="zoning.html" title="ZoningTableau">Zoning</a>
                 <a href="tableau.html" title="Tableau">Tableau</a>
                 <a href="liste.html" title="Liste">Liste</a>
@@ -57,55 +57,76 @@
                 <a href="multimedia.html" title="Multimédia">Multimédia</a>
                 <a href="animation.html" title="Animation">Animation</a>
           </div>   
-
         </nav>
 
         <main><!-- Début main -->
-            <aside><!-- contenu secondaire -->
-                <!-- de côté -->
-            </aside>
-            <section><!-- zone de contenu regroupement thématique, texte, titres etc. -->
-                <div>
-                    <h2>Ici un titre 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim numquam eaque deserunt eligendi nisi in placeat dolorum recusandae neque a architecto quae sed, vitae magnam earum. Necessitatibus ad recusandae blanditiis.</p>
-                    <!-- zone supplémentaire de contenu -->
-                </div>
-                <span>
-                    <h3>Ici un titre 3</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati in consequuntur pariatur ab necessitatibus officiis iure consequatur consectetur quae distinctio quasi nostrum officia iusto dolore at nihil, magnam laboriosam deleniti.</p>
-                    <!-- zone supplémentaire de contenu -->
-                </span>
-                <article>
-                    <h4>Ici un titre 4</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nam rem, facere magni ea maiores expedita, at molestiae tenetur molestias veniam. Fuga laudantium voluptatum qui! Quod dicta magnam sequi numquam?</p>
-                    <!-- zone supplémentaire de contenu -->
-                </article>
-            </section>
+         <section>
+             <h3>Centrer un élément de type bloc</h3>
+             <div class="centre">n°1</div>
+         </section>
+            <hr width="50%">
+         <section>
+             <h3>Position absoulute</h3>
+             <p>n° 2 : un carré jaune ; regardez en haut ! </p>
+             <div class="absolute">n° 2</div>
+         </section>
+
+         <section>
+             <h3>Position relative</h3>
+             <div class="relative">
+                <div>n°3</div>
+             </div>
+         </section>
+
+         <section>
+             <h3>Position fixed</h3>
+             <p>cf. le bouton vers le haut (en bas à droite)</p>
+         </section>
+
+         <section>
+             <h3>Le pourcentage</h3>
+             <div class="trente">30%</div>
+             <div class="cinquante">50%</div>
+             <div class="cent">100%</div>
+         </section>
+
+         <section>
+             <h3>L'attribut float</h3>
+             <div class="float">1</div>
+             <div class="float">2</div>
+             <div class="float">3</div>
+             <div class="float">4</div>
+             <div class="float clear">5</div>
+             <div class="float">6</div>
+             <div class="float">7</div>
+             <div class="float clear">8</div>
+             <div class="float">9</div>
+             <div class="clear dernier">10</div>
+         </section>
+
+         <section>
+             <h3>Exercice sur le float</h3>
+             <div class="zone"></div>
+                <div class="zone1"></div>
+                <div class="zone2"></div>
+                <div class="zone3"></div>
+                <div class="zone4"></div>
+             <div class="zone clear"></div>
+         </section>
+
+         <section>
+             <h3>Flexbox</h3><!-- Se place en fonction de l'élément parent -->
+             <article class="flex">
+                 <div>1</div>
+                 <div>2</div>
+                 <div>3</div>
+                 <div>4</div>
+             </article>
+         </section>  
 
         </main><!-- fin main -->
     <footer>
-       <nav> <!-- début nav footer -->
-               <ul>
-                   <li>Accueil</li>
-                   <li>Texte</li>
-                   <li>Sélecteurs</li>
-               </ul>
-               <ul>
-                   <li>Images</li>
-                   <li>Position</li>
-                   <li>Zoning</li>
-               </ul>
-               <ul>
-                   <li>Tableau</li>
-                   <li>Liste</li>
-                   <li>Lien</li>
-               </ul>
-               <ul>
-                   <li>Menu</li>
-                   <li>Multimédia</li>
-                   <li>Animation</li>
-               </ul>
-       </nav><!-- fin nav footer -->
+        <!-- pied de page -->
     </footer>
 
 </body>

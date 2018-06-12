@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
     <!-- font awesome pour les logos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <title>Site PHASE 2 - accueil</title>
+    <title>Site PHASE 2 - Tableau</title>
     <!-- la description qui s'affiche sur un résultat de recherche google -->
     <meta name="description" content="Site de la phase 2 Papaoumar Mbaye 2018/2019">
     <!-- les mots clefs utiles pour les moteurs de recherches -->
@@ -44,13 +44,13 @@
         <nav>
             <!-- zone du menu les liens pour passer de pages en pages -->
           <div class="ancreNAV">
-                <a href="index.html" title="Accueil" class="active">Accueil</a>
+                <a href="index.html" title="Accueil">Accueil</a>
                 <a href="texte.html" title="Texte">Texte</a>
                 <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
                 <a href="image.html" title="Image">Image</a>
                 <a href="position.html" title="Position">Position</a>
                 <a href="zoning.html" title="ZoningTableau">Zoning</a>
-                <a href="tableau.html" title="Tableau">Tableau</a>
+                <a href="tableau.html" title="Tableau" class="active">Tableau</a>
                 <a href="liste.html" title="Liste">Liste</a>
                 <a href="lien_menu.html" title="Lien">Lien</a>
                 <a href="formulaire.html" title="Formulaire">Formulaire</a>
@@ -61,51 +61,66 @@
         </nav>
 
         <main><!-- Début main -->
-            <aside><!-- contenu secondaire -->
-                <!-- de côté -->
-            </aside>
-            <section><!-- zone de contenu regroupement thématique, texte, titres etc. -->
-                <div>
-                    <h2>Ici un titre 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim numquam eaque deserunt eligendi nisi in placeat dolorum recusandae neque a architecto quae sed, vitae magnam earum. Necessitatibus ad recusandae blanditiis.</p>
-                    <!-- zone supplémentaire de contenu -->
-                </div>
-                <span>
-                    <h3>Ici un titre 3</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati in consequuntur pariatur ab necessitatibus officiis iure consequatur consectetur quae distinctio quasi nostrum officia iusto dolore at nihil, magnam laboriosam deleniti.</p>
-                    <!-- zone supplémentaire de contenu -->
-                </span>
-                <article>
-                    <h4>Ici un titre 4</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nam rem, facere magni ea maiores expedita, at molestiae tenetur molestias veniam. Fuga laudantium voluptatum qui! Quod dicta magnam sequi numquam?</p>
-                    <!-- zone supplémentaire de contenu -->
-                </article>
-            </section>
+          <h2>Un tableau</h2>
+          <section class="tableau">
 
+                <table border="1">
+                    <!-- la légende du tableau -->
+                    <caption>Vols Paris Rome</caption>
+                     <thead>
+                        <tr> <!-- rangée tu tableau -->
+                            <td>Dates</td> <!-- table data colonnes du tableau -->
+                            <td>02/08/2017</td>
+                            <td>03/08/2017</td>
+                            <td>05/08/2017</td>
+                        </tr>
+                    </thead>
+ 
+                    <tfoot><!-- le pied du tableau -->
+                        <tr>
+                            <td>Dates</td>
+                            <td>02/08/2017</td>
+                            <td>03/08/2017</td>
+                            <td>05/08/2017</td>
+                        </tr>
+                    </tfoot>
+ 
+                    <tbody><!-- le corps du tableau -->
+                        <tr>
+                            <td>Air France</td>
+                            <td>Départ 10 h - Arrivé 13 h</td>
+                            <td>Départ 15 h - Arrivé 18 h</td>
+                            <td>Départ 17 h - Arrivé 20 h</td>
+                        </tr>
+ 
+                        <tr>
+                            <td></td>
+                            <td>200 €</td>
+                            <td>180 €</td>
+                            <td>170 €</td>
+                        </tr>
+ 
+                        <tr>
+                            <td>Alitalia</td>
+                            <td>Départ 6 h - Arrivé 9 h</td>
+                            <td>Départ 13 h - Arrivé 16 h</td>
+                            <td>Départ 21 h - Arrivé 00 h</td>
+                        </tr>
+ 
+                        <tr>
+                            <td></td>
+                            <td>150 €</td>
+                            <td>160 €</td>
+                            <td>150 €</td>
+                        </tr> 
+                    </tbody>
+                </table>
+            </section>                                        
+
+ 
         </main><!-- fin main -->
     <footer>
-       <nav> <!-- début nav footer -->
-               <ul>
-                   <li>Accueil</li>
-                   <li>Texte</li>
-                   <li>Sélecteurs</li>
-               </ul>
-               <ul>
-                   <li>Images</li>
-                   <li>Position</li>
-                   <li>Zoning</li>
-               </ul>
-               <ul>
-                   <li>Tableau</li>
-                   <li>Liste</li>
-                   <li>Lien</li>
-               </ul>
-               <ul>
-                   <li>Menu</li>
-                   <li>Multimédia</li>
-                   <li>Animation</li>
-               </ul>
-       </nav><!-- fin nav footer -->
+    
     </footer>
 
 </body>
