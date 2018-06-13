@@ -1,0 +1,1355 @@
+@charset "utf-8";
+
+/* reset simple */
+
+
+*{ /* * l'étoile signifie tout */
+
+    box-sizing: border-box;
+ } 
+ html, body, div, span, applet, object, iframe,
+
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+ a, abbr, acronym, address, big, cite, code,
+
+ del, dfn, em, img, ins, kbd, q, s, samp,
+
+ small, strike, strong, sub, sup, tt, var,
+
+ b, u, i, center,
+
+ dl, dt, dd, ol, ul, li,
+
+ fieldset, form, label, legend,
+
+ table, caption, tbody, tfoot, thead, tr, th, td,
+
+ article, aside, canvas, details, embed,
+
+ figure, figcaption, footer, header, hgroup,
+
+ menu, nav, output, ruby, section, summary,
+
+ time, mark, audio, video {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+ }
+
+/* les typos google */
+
+/* font-family: 'Anton', sans-serif;
+
+font-family: 'Lemonada', cursive;
+
+font-family: 'Oswald', sans-serif; */
+
+
+
+/* mes styles papaoumar mbaye */
+
+body {
+
+    /* background: pink; */
+
+    font-family: 'Oswald', sans-serif;
+    background-image: url('../img/concrete-texture.png');
+
+}
+
+
+
+h1 {
+
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    color: #2980b9;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+
+
+h2 {
+
+    font-size: 35px;
+    color: #2c3e50;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1 px 2px #aaa;
+}
+
+
+h3 {
+
+    font-size: 22px;
+    color: #2c3e50;
+    padding: 15px;
+    text-shadow: 1px 1px 2px #aaa;
+
+}
+
+
+
+h4 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+blockquote {
+    /* font-style: italic; */
+    font-size: 120%;
+    font-family: 'Lemonada', sans-serif;
+}
+
+.position1 { /* pour aligner les guillemets */
+    margin: 20px;
+    position: relative;
+    bottom: 15px;
+}
+
+.position2 { /* pour aligner les guillemets */
+    margin: 20px;
+    position: relative;
+    top: 15px;
+}
+
+blockquote i {
+    font-size: 300%;
+    vertical-align: middle;
+    color: #6acafc;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* header index */
+
+header {
+    height: 175px;
+    background: #2c3e50;
+
+}
+
+
+
+#logo {
+    float: left;
+    width: 25%;
+    background: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+#slogan {
+    float: left;
+    width: 50%;
+    background: #2c3e50;
+    padding-top: 50px;
+}
+
+#social {
+    float: left;
+    width: 25%;
+}
+
+
+
+#social i {
+    background: #2c3e50;
+    font-size: 30px;
+    text-align: right;
+    padding: 15px 30px 0 0;
+    display: block;
+}
+
+
+
+header a {
+    text-decoration: none;
+    color: #10828c;
+}
+
+
+
+/* fin header */
+
+
+
+/* nav // navigation */
+
+
+
+nav {
+    background: #2980b9;
+    height: 70px;
+    border-bottom: 8px solid #6acafc;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+
+
+
+nav a {
+    background: #6acafc;
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius: 10px 0px;
+    border: 2px solid #fff;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.5s; /* transition sur le a marche avec le :hover */
+}
+
+
+
+nav a:hover {
+    color: #fff;
+    background: #a6d6c3;
+}
+
+
+
+.active {
+    color: #fff;
+    background: #a6d6c3;
+}
+
+
+
+/* fin nav */
+
+
+
+/* les zones principales */
+
+main {
+    background: rgba(178, 178, 178, 0.30);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+aside {
+    height: 250px;
+    background: #a6d6c3;
+}
+
+section {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+
+
+footer {
+    height: 400px;
+    background: #2980b9;
+    margin-top: 20px; 
+}
+
+ul { /* ul pour le footer */ 
+    display: inline-block;
+    padding: 100px;
+}
+
+li {  /* liste li pour le footer bas de page */
+
+    padding: 10px;
+
+    list-style: none;
+
+    color: white;
+
+}
+
+
+
+/* fin des zones principales */
+
+
+
+/* le retour en haut de page */
+
+
+
+button {
+
+    font-size: 350%;
+
+    background: transparent;/* l'icône est transparente */
+
+    border: none;
+
+    color: #2c3e50;
+
+    position: fixed; /* le button est fixe à 40px du bas et à 20 de la droite */
+
+    bottom: 400px;
+
+    right: 20px;
+
+}
+
+
+
+/* page texte voir aussi blockquote */
+
+
+
+.clear {
+
+    clear: both;
+
+}
+
+p {
+
+    padding: 5px;
+
+}
+
+
+
+/* fin page texte */
+
+
+
+/* page sélecteurs */
+
+
+
+/* .select p {
+
+    color: green;
+
+    background: purple;
+
+} */
+
+
+
+
+
+.select p:first-of-type { /* 1er enfant du type désigné */
+
+    background: pink;
+
+}
+
+
+
+.select p:last-of-type { /* dernier enfant du type désigné */
+
+    background: #a6d6c3;
+
+    /* width: 300px; */
+
+}
+
+
+
+.select p:nth-of-type(4), p:nth-of-type(6) {
+
+    background: #333;
+
+    width: 500px;
+
+}
+
+.select *:last-child {
+
+    font-size: 30px;
+
+    border: thin solid #333;
+
+}
+
+
+
+.select .zoneA {
+
+    color: orangered;
+
+}
+
+
+
+.select .zoneB {
+
+    color: olive;
+
+}
+
+
+
+.select div:not(.zoneB){
+
+    font-size: 50px;
+
+}
+
+
+
+.select .zoneB .couleurBleu{
+
+    color: blue;
+
+    font-size: 16px;
+
+}
+
+
+
+.select #zoneD span {
+
+    color: #32ff32;
+
+    /* font-size: 30px */
+
+    font-style: italic;
+
+}
+
+
+
+/* fin page sélecteur */
+
+
+
+/* début page images */
+
+
+
+.imageFond {
+
+    background:#000 url('../img/fond.jpg') no-repeat;
+
+    background-size: cover;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.imageFond p {
+
+    width: 75%;
+
+    margin: 200px auto 250px auto;
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.60);
+
+    border-radius: 10px;
+
+    font-size: 120%;
+
+}
+
+.aucentre {
+
+    text-align: center;
+
+}
+
+img[src="img/toureiffel.jpg"] { /* on ne cible que cette image là */
+
+    margin: auto;
+
+    display: block;
+
+    padding: 20px;
+
+    background: #fff;
+
+}
+
+
+
+.imagegolden {
+
+    margin: 20px;
+
+    border: 5px solid #fff;
+
+    box-shadow: 4 px 4px 4px rgba(0, 0, 0, 0.2);
+
+    transition: 1s;
+
+    
+
+}
+
+.imagegolden:hover {
+
+    transform: rotate(-7deg);
+
+    border: 15px solid #fff;
+
+}
+
+
+
+.rotation360:hover {
+
+    transform: rotate(-360deg);
+
+}
+
+
+
+/* fin pages images */
+
+
+
+/* page position */
+
+
+
+/* positions "absolute" */
+
+.centre {
+
+    margin: auto;
+
+    width: 200px;
+
+    height: 200px;
+
+    background: #6acafc;
+
+}
+
+
+
+.absolute {
+
+    position: absolute; /* voir aussi le "button" */
+
+    top: 24%;
+
+    left: 10%;
+
+    background: yellow;
+
+    width: 100px;
+
+    height: 100px;
+
+}
+
+
+
+/* positions "relative" */
+
+
+
+.relative {
+
+    background: #2980b9;
+
+    width: 400px;
+
+    height: 400px;
+
+    position: relative;/* relative à la section dans laquelle se trouve la div .relative */
+
+    left: 100px;
+
+    bottom: 10px;
+
+}
+
+
+
+.relative div {
+
+    background: #FFF1A8;
+
+    width: 100px;
+
+    height: 100px;
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+}
+
+
+
+.trente {
+
+font-size: 22px;
+
+width:30%;
+
+background: red;
+
+padding: 20px;
+
+color: #10828c;
+
+}
+
+
+
+.cinquante {
+
+font-size: 22px;
+
+width: 50%;
+
+background: orangered;
+
+padding: 20px;
+
+color: #32ff32
+
+}
+
+
+
+.cent {
+
+font-size: 22px;
+
+width: 100%;
+
+background: pink;
+
+padding: 20px;
+
+color: #fff;  
+
+}
+
+
+
+/* page position float */
+
+
+
+.float {
+
+    height: 170px;
+
+    width: 170px;
+
+    background: #FFF1A8;
+
+    margin: 10px;
+
+    padding-top: 2px;
+
+    float: left;
+
+    text-align: center;
+
+    font-size: 25px;
+
+    border: 2px solid darkred;
+
+}
+
+
+
+.dernier {
+
+    height: 170px;
+
+    width: 170px;
+
+    background: #FFF1A8;
+
+    margin: 10px;
+
+    padding-top: 2px;
+
+    text-align: center;
+
+    font-size: 25px;
+
+    border: 2px solid darkred;
+
+}
+
+
+
+/* Exercice sur le float */
+
+
+
+.zone {
+
+    height: 70px;
+
+    background: #333;
+
+}
+
+
+
+.zone1, .zone2, .zone3, .zone4 {
+
+    height: 250px;
+
+    width: 25%;
+
+    float: left;
+
+}
+
+
+
+.zone1 {
+
+    background: #2D5C7F;
+
+}
+
+
+
+.zone2 {
+
+    background: #FF8F56;
+
+}
+
+
+
+.zone3 {
+
+    background: #aaa;
+
+}
+
+
+
+.zone4 {
+
+    background: #32ff32;
+
+}
+
+
+
+
+
+/* Fin Exercice sur le float */
+
+
+
+/* Exercice sur le flexbox */
+
+
+
+.flex {
+
+    display: flex;
+
+    /* également répartis horizontalement */
+
+    /* justify-content: space-between; */
+
+
+
+    /* espace égal autour de chaque div */
+
+    /* justify-content: space-around; */
+
+
+
+    /* direction en colonne de haut en bas */
+
+    /* flex-direction: column; */
+
+
+
+    flex-direction: row-reverse;
+
+}
+
+
+
+.flex div {
+
+    width: 150px;
+
+    height: 150px;
+
+    background: #984A59;
+
+    text-align: center;
+
+    font-size: 50px;
+
+    color: white;
+
+}
+
+
+
+/* Page avec les zoning */
+
+
+
+/* zoning 1 */
+
+
+
+#zoning1 {
+
+    background: #333;
+
+    width: 800px;
+
+    text-align: center;
+
+    margin: auto;
+
+    text-shadow: 1px 1px 2px white;
+
+    
+
+}
+
+
+
+#zoning1 header {
+
+    height: 70px;
+
+    background: #F7F39A;
+
+}
+
+
+
+#zoning1 aside {
+
+    height: 525px;
+
+    width: 20%;
+
+    float: left;
+
+    background: #A3DE83;
+
+}
+
+
+
+#zoning1 section {
+
+    height: 525px;
+
+    width: 80%;
+
+    float: left;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+/********* zoning 2 ***********/
+
+
+
+#zoning2 {
+
+   background: #ffd6d6;
+
+   width: 500px;
+
+   text-align: center;
+
+   margin: auto;
+
+    
+
+}
+
+
+
+#zoning2 header {
+
+    height: 70px;
+
+    background:  purple;
+
+}
+
+
+
+#zoning2 aside {
+
+   height: 525px;
+
+   width: 20%;
+
+   float: left; 
+
+}
+
+
+
+#zoning2 .middle {
+
+    float: left;
+
+    width: 60%;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+/* Zoning 3 */
+
+
+
+#zoning3 {
+
+    background: #ffd6d6;
+
+    width: 800px;
+
+    margin: auto;
+
+    text-align: center;   
+
+}
+
+
+
+#zoning3 section {
+
+    background: #FF8F56;
+
+    width: 50%;
+
+    height: 525px;
+
+    float: left;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+#zoning3 footer {
+
+    height: 70px;
+
+    float: left;
+
+    background: #D8EBB5;
+
+    width: 100%;
+
+    color: black;
+
+}
+
+
+
+/* Zoning 4 */
+
+
+
+#zoning4 {
+
+    width: 700px;
+
+    background: white;
+
+    text-align: center;
+
+    margin: auto;
+
+}
+
+
+
+#zoning4 header {
+
+    height: 100px;
+
+    background: #32ff32;
+
+}
+
+
+
+#zoning4 nav {
+
+    height: 50px;
+
+    border: none;
+
+}
+
+
+
+#zoning4 section {
+
+    height: 500px;
+
+    margin: 20px;
+
+    background:hotpink;
+
+    padding: 0;
+
+}
+
+
+
+#zoning4 footer {
+
+    height: 50px;
+
+    background: moccasin;
+
+}
+
+
+
+/* zoning 5 */
+
+
+
+#zoning5 {
+
+    background-color: #A3DE83;
+
+    margin: 0;
+
+    border: thin solid red;
+
+    text-align: center;
+
+}
+
+
+
+#zoning5 header {
+
+    height: 100px;
+
+    background: #be32ff;
+
+}
+
+
+
+#zoning5 nav {
+
+    height: 50px;
+
+    background:rgb(214, 107, 187);  
+
+    border-bottom: 8px solid #333;
+
+}
+
+
+
+#zoning5 section {
+
+    background: #176D81;
+
+    margin: 20px;
+
+    padding: 0;
+
+}
+
+
+
+#zoning5 .section .z1,.z2, .z3, .z4 {
+
+    height: 250px;
+
+    width: 50%;
+
+    float: left;
+
+}
+
+
+
+#zoning5 .section .z1,.z2, .z3, .z4 p {
+
+    line-height: 250px;
+
+  
+
+   
+
+}
+
+
+
+#zoning5 .z1, .z4 {
+
+    background-color: #32ff32;
+
+}
+
+
+
+#zoning5 .z2, .z3 {
+
+    background: plum;
+
+}
+
+#zoning5 footer {
+
+    height: 75px;
+
+    background:#F8D771;
+
+}
+
+
+
+/* Zoning 6 */
+
+
+
+#zoning6 {
+
+    width: 800px;
+
+    margin: 0 auto;
+
+    color: red;
+
+}
+
+
+
+#zoning6 header {
+
+    /* background: #32ff32; */
+
+    height: 200px;
+
+}
+
+
+
+.haut1 {
+
+    width: 25%;
+
+    height: 100%;
+
+    float: left;
+
+    background: tomato;
+
+}
+
+
+
+.haut2 {
+
+    width:50%;
+
+    height: 100%;
+
+    float: left;
+
+    background:teal; 
+
+}
+
+
+
+.haut3 {
+
+    width: 25%;
+
+    height: 100%;
+
+    float: left;
+
+    background: turquoise;
+
+}
+
+
+
+#zoning6 nav {
+
+    border: none;
+
+    height: 100px;
+
+}
+
+
+
+#zoning6 aside {
+
+    width: 25%;
+
+    float: left;
+
+    background: thistle;
+
+    height: 700px;
+
+}
+
+
+
+#zoning6 section {
+
+    float: left;
+
+    width: 75%;
+
+    background: #A3DE83;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+#zoning6 .a {
+
+    height: 250px;
+
+    background:wheat;
+
+    float: left;
+
+    width: 50%;
+
+}
+
+
+
+#zoning6 .b {
+
+    height: 250px;
+
+    background: whitesmoke; 
+
+    float: left;
+
+    width: 50%; 
+
+}
+
+
+
+#zoning6 .diaporama {
+
+    height: 250px;
+
+    background: #A3DE83;
+
+    line-height: 250px;
+
+    text-align: center;
+
+}
+
+
+
+#zoning6 .c, .d, .e, .f {
+
+    width: 25%;
+
+    float: left;
+
+    height: 200px;   
+
+    text-align: center;
+
+    line-height: 200px;
+
+}
+
+#zoning6 .d, .f {
+
+    background: #be32ff;
+
+}
+
+#zoning6 .c, .e {
+
+    background: #2c3e50;
+
+}
+
+
+
+#zoning6 footer {
+
+    height: 70px;
+
+    background: #F8D771;
+
+    color:black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
