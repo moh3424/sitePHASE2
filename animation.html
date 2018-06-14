@@ -31,7 +31,7 @@
 
     <!-- l'auteur de la page -->
 
-    <meta name="author" content="Papaoumar Mbaye">
+    <meta name="author" content="Mohamed Yessad">
 
     <!-- ma feuille de style -->
 
@@ -41,32 +41,17 @@
 
 <body>
 
-   
-
         <header>
-
             <div id="logo">
-
-
-
                 <a href="#logo">
-
                     <button type="button"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></button>
-
                 </a>
-
                 <img src="img/logo.png" alt="logo">
-
-
 
             </div><!-- fin id logo -->
 
-
-
             <div id="slogan">
-
                <a href="index.html" title="Mon premier site en HTML acuueil"><h1>Mon premier site en HTML5 et CSS3</h1></a>
-
             </div>
 
             <div id="social">
@@ -83,98 +68,73 @@
 
         </header>
 
-
-
         <nav>
-
             <!-- zone du menu les liens pour passer de pages en pages -->
-
           <div class="ancreNAV">
-
                 <a href="index.html" title="Accueil">Accueil</a>
-
                 <a href="texte.html" title="Texte">Texte</a>
-
                 <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
-
-                <a href="image.html" title="Image">Image</a>
-
+                <a href="image.html" title="Image" class="active">Image</a>
                 <a href="position.html" title="Position">Position</a>
-
                 <a href="zoning.html" title="ZoningTableau">Zoning</a>
-
                 <a href="tableau.html" title="Tableau">Tableau</a>
-
-                <a href="liste.html" title="Liste " class="active">Liste</a>
-
+                <a href="liste.html" title="Liste">Liste</a>
                 <a href="lien_menu.html" title="Lien">Lien</a>
-
                 <a href="formulaire.html" title="Formulaire">Formulaire</a>
-
                 <a href="multimedia.html" title="Multimédia">Multimédia</a>
-
                 <a href="animation.html" title="Animation">Animation</a>
-
           </div>   
         </nav>
 
-
         <main><!-- Contenu principal -->
-            <h2>les listes</h2>
-            <section>
+         <h2>Animation en CSS</h2>
+         <section>
+             <div class="infoBulle">
+                 <p>
+                     <a href="#">Passez la souris <span><i class="fas fa-comment-alt"></i>Coucou; je suis une pop-up</span></a>
+                 </p>
+                 <p>
+                     <a href="#">Ici Aussi .... <span><i class="fas fa-comment-alt"></i>Et moi aussi  je suis une pop-up</span></a>
+                 </p>
+                 <p>
+                     <a href="#">Une fois encore, allez <span><i class="fas fa-comment-alt"></i>Et moi je suis la benjamine</span></a>
+                 </p>
+             </div>
+         </section>
+         <section>
+             <h3>Effets de survol avec des transitions et des filtres-<i class="fas fa-hand-point-right"></i></h3>
+             <ul class="imgeffets">
+                 <li>
+                     <img src="img/survol_img1.jpg" alt="">
+                 </li>
+                 <li>
+                     <img src="img/survol_img2.jpg" alt="">
+                 </li>
+                 <li>
+                     <img src="img/survol_img3.jpg" alt="">
+                 </li>
+                 <li>
+                     <img src="img/survol_img4.jpg" alt="">
+                 </li>
+             </ul>
 
-                <h3>Les listes ul</h3>
- 
-                <ul class="fruit">
- 
-                    <li class="fruit" ><i class="far fa-hand-spock" aria-hidden="true"></i> Orange</li>
- 
-                    <li><i class="far fa-hand-spock" aria-hidden="true"></i> Fraise</li>
- 
-                    <li><i class="far fa-hand-spock" aria-hidden="true"></i> Poire</li>
- 
-                </ul>
- 
+         </section>
+         <section>
+                <h3>Rotation d'un menu en CSS3</h3>
+                <article id="menuRotate">
+                    <dl class="menu">
+                        <dt class="btnRot">Partager</dt>
+                        <dd><a href="#">...</a></dd>
+                        <dd><a href="#">Google +</a></dd>
+                        <dd><a href="#">Facebook</a></dd>
+                        <dd><a href="#">Twitter</a></dd>
+                    </dl>
+                    <div class="masque"></div>
+                    <div class="ombre"></div>
+                </article>
             </section>
-            <hr>
-            <h3>Liste Imbriquée</h3>
-
-            <div id="liste02">
-                <ul class="imbriquee"><!-- ul>li*2 -->
-                    <li class="europe">Europe
-                        <ul>
-                            <li>France</li>
-                            <li>Italie</li>
-                            <li>Malte</li>
-                        </ul>
-                    </li>
-                    <li class="asie">Asie
-                        <ul>
-                            <li>Japon</li>
-                            <li>vietnam</li>
-                            <li>Corée</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <hr>
-            <h3>liste ordonnée</h3>
-            <ol>
-                <li>Algérie</li>
-                <li>Japon</li>
-                <li>Angleterre</li>
-                <li></li>
-                <li>U S A</li>
-            </ol>
-            <hr>
-            <h3>Definition list</h3>
-            <dl>
-                <dt>
-                    <dd></dd>
-                </dt>
-            </dl>
+            <div class="clear"></div>
         </main><!-- fin main -->
-
     <footer>
 
         <!-- pied de page -->
