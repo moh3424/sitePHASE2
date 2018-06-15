@@ -1,7 +1,4 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;@charset "utf-8";
-/* reset simple */
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+/* reset */
 *{ /* * l'étoile signifie tout */
     box-sizing: border-box;
  } 
@@ -65,6 +62,11 @@ h4 {
     text-align: center;
     margin-top: 30px;
 }
+/* aside{
+    width: 25%;
+    background: #09c; 
+    float: left;
+} */
 
 blockquote {
     /* font-style: italic; */
@@ -178,12 +180,20 @@ main {
 }
 
 aside {
-    height: 250px;
+    height: 500px;
+    width: 20%;
     background: #a6d6c3;
+}
+.leftindex{
+    float: left;
 }
 section {
     margin-top: 50px;
     padding: 20px;
+    width: 80%;
+}
+.rightindex{
+    float: right;
 }
 
 footer {
@@ -587,6 +597,8 @@ color: #fff;
     margin: 20px;
     background:hotpink;
     padding: 0;
+    margin: 10px auto;
+  
 }
 
 #zoning4 footer {
@@ -618,6 +630,7 @@ color: #fff;
     background: #176D81;
     margin: 20px;
     padding: 0;
+    margin: 10px auto;
 }
 
 #zoning5 .section .z1,.z2, .z3, .z4 {
@@ -628,8 +641,6 @@ color: #fff;
 
 #zoning5 .section .z1,.z2, .z3, .z4 p {
     line-height: 250px;
-  
-   
 }
 
 #zoning5 .z1, .z4 {
@@ -744,12 +755,10 @@ ul.fruit {
  
  }
  ul.fruit li {
- 
     display: inline;
- 
     margin: 15px;
- 
  }
+
  li .fa {
     font-size: 90%;
     color: #2D5C7F ;
@@ -784,6 +793,39 @@ ul.fruit {
     transition-duration: 2s;
 }
 /* fin liste */
+
+/* page tableau */
+.tableau table {
+    border-collapse: collapse;
+    border: 2px solid #205D67 ;
+    margin: auto;
+    width: 80%;
+    padding: 5px;
+    color: black,
+ }
+ 
+ .tableau td {
+    border: 2px solid #205D67 ;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+ }
+ 
+ .tableau thead, .tableau tfoot {
+    background: #d0e3fa;
+    border: 5px solid #6495ed;
+    text-align: center;
+ }
+ 
+ .tableau caption {
+    background: #d0e3fa ;
+    border: 5px solid #6495ed ;  
+    height: 50px;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 5px;
+    color: #6495ed;
+ }
 /* page des liens */
 .ancre {
     text-align: center;
@@ -899,10 +941,12 @@ ul.fruit {
  .videoFond{
      padding-left: 0;
      padding-right: 0;
+     margin: auto;
  }
  .videoFond video{
      position: absolute;
      width: 100%;
+     /* margin: auto; */
     /* z-index: 1; */
     /* l'empilement de z-orde le 1 et le plus basd que le 2 */
 }
@@ -910,15 +954,16 @@ ul.fruit {
     position: relative;/* permet de décaler un élément par rapport à un autre */
     width: 100%;
     height: 500px;
-    /* z-index: 2; */
+    /* margin: auto; */
+    z-index: 2;
 }
 .videoFond p{
     position: absolute;
     /* z-index: 100; */
     width: 500px;
-    margin: auto;
+    /* margin: auto; */
     background: rgba(255, 255, 255, 0.40);
-    left:250px;
+    left:150px;
     top: 150px;
     padding:  20px;
     font-size: 120%;
@@ -926,6 +971,7 @@ ul.fruit {
 }
 iframe[src="https://www.youtube.com/embed/MHYWgf3VqoY"]{
     width: 100%;
+    margin: auto;
 }
 .audio{
     text-align: center;
@@ -1074,10 +1120,9 @@ iframe[allowfullscreen]{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 24px;
+    height: 23px;
     padding-top: 5px;
  }
-
 
 #menuRotate dd{
     transform: rotate(180deg);
@@ -1097,5 +1142,35 @@ iframe[allowfullscreen]{
 }
 #menuRotate dl:hover{
     transform: rotate(-180deg);
-    animation: bounceIn 3s eas-in-out;
+    animation: bounceIn 0.7s ease-in-out;
 }
+/* la règle @ @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation css */
+@keyframes bounceIn{
+    from{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-200deg);
+    }
+    90%{
+        transform: rotate(-175deg);
+    }
+    to{
+        transform: rotate(-180deg);
+    }
+}
+@keyframes bounceOut{
+    from{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(-180deg);
+    }
+    10%{
+        transform: rotate(-165deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+/* FIN-THE END */
