@@ -22,6 +22,7 @@
     font: inherit;
     vertical-align: baseline;
  }
+
 /* les typos google */
 /* font-family: 'Anton', sans-serif;
 font-family: 'Lemonada', cursive;
@@ -201,16 +202,16 @@ footer {
     background: #2980b9;
     margin-top: 20px; 
 }
-ul { /* ul pour le footer */ 
+footer ul {/* ul pour le footer  */
     display: inline-block;
     padding: 100px;
 
-}
-/* li {  liste li pour le footer bas de page
+} 
+footer li {  /* liste li pour le footer bas de page */
     padding: 10px;
     list-style: none;
     color: white;
-} */
+} 
 
 /* fin des zones principales */
 
@@ -807,7 +808,7 @@ ul.fruit {
  .tableau td {
     border: 2px solid #205D67 ;
     padding: 10px;
-    text-align: left;
+    /* text-align: left; */
     vertical-align: middle;
  }
  
@@ -822,7 +823,8 @@ ul.fruit {
     border: 5px solid #6495ed ;  
     height: 50px;
     font-size: 25px;
-    text-align: left;
+    /* text-align: left; */
+    text-align: center;
     padding-left: 5px;
     color: #6495ed;
  }
@@ -923,14 +925,17 @@ ul.fruit {
      background: #2c3e50;
      border-radius: 10px;
  }
+
  label{
      margin: 20px 10px;
  }
+
  textarea{
      resize: none;
      /* resize: none; */ 
 
  }
+
  label[for="orange"]{
      display: block;
      width: 6%;
@@ -943,6 +948,7 @@ ul.fruit {
      padding-right: 0;
      margin: auto;
  }
+
  .videoFond video{
      position: absolute;
      width: 100%;
@@ -950,6 +956,7 @@ ul.fruit {
     /* z-index: 1; */
     /* l'empilement de z-orde le 1 et le plus basd que le 2 */
 }
+
 .videoText{
     position: relative;/* permet de décaler un élément par rapport à un autre */
     width: 100%;
@@ -957,6 +964,7 @@ ul.fruit {
     /* margin: auto; */
     z-index: 2;
 }
+
 .videoFond p{
     position: absolute;
     /* z-index: 100; */
@@ -969,20 +977,25 @@ ul.fruit {
     font-size: 120%;
     border-radius: 15px;
 }
+
 iframe[src="https://www.youtube.com/embed/MHYWgf3VqoY"]{
     width: 100%;
     margin: auto;
 }
+
 .audio{
     text-align: center;
 }
+
 iframe[allowfullscreen]{
     width:100;
 }
+
 .bordure{
     border: 2px solid olive;
     background: linear-gradient(purple, olive);
 }
+
 /* Page Animation */
 .infoBulle{
    height: 250px;
@@ -992,10 +1005,12 @@ iframe[allowfullscreen]{
    background: #444;
    box-shadow: 0 0 50px #222 inset;
 }
+
 .infoBulle p{
    text-align: center;
    padding-top: 30px;
 }
+
 .infoBulle a{
   color: #ccc;
   text-decoration: none;
@@ -1003,12 +1018,14 @@ iframe[allowfullscreen]{
   padding: 5px 15px;
   text-shadow: 0 -2 0 black;
 }
+
 .infoBulle a:hover{
     color: white;
     background: rgba(0, 0, 0, 0.4);
     text-shadow: 0 1px 2px black;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.40);
 }
+
 .infoBulle a span{
     position: absolute;
     padding: 15px;
@@ -1021,10 +1038,12 @@ iframe[allowfullscreen]{
     border-radius: 13px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
+
 .infoBulle a:hover span{
     opacity:1;
     transform: scale(1) rotate(0);
 }
+
 .infoBulle a span:before{
     /* content: ""; */
     position: absolute;
@@ -1032,24 +1051,29 @@ iframe[allowfullscreen]{
     left: -10px;
     border-bottom: 6px solid rgba(0, 0, 0, 0.9);
 }
+
 /* effets survol avec transition et filtres  */
 /* la ul à la classe imgeffets */
-.imgeffets{
+.imgeffets ul{
     width: 302px;
     height: 320px;
     margin: 70px auto;
 }
+
 .imgeffets li{
     list-style: none;
+    /* display: block; */
     float: left;
     width: 141px;
     height: 150px;
     margin: 5px;
 }
+
 /* la dernière des quatre li (3) reprend ça position dans le flux */
 .imgeffets li:nth-child(3){
     clear: both;
 }
+
 .imgeffets img{
     position: absolute;
     /* toutes les images sont empilés en bas */
@@ -1060,14 +1084,17 @@ iframe[allowfullscreen]{
     transition: .5s cubic-bezier(0,3,.4,1);
     /* pour transition il faut sur  le :hover transform */
 }
+
 .imgeffets li:hover img{
     z-index: 2;
     transform: scale(1.5);
     box-shadow: 0 0 10px black;
 }
+
 .imgeffets:hover li:not(:hover) img{
-    filter: grayscale(0) blur(5px)
+    filter: grayscale(0) blur(5px);
 }
+
 /* rotation d'un menu en css 3 */
 #menuRotate{
     height: 360px;
@@ -1079,6 +1106,7 @@ iframe[allowfullscreen]{
     overflow: hidden;
     border: 2px solid white;
 }
+
 #menuRotate .masque{
     /* cette div masque le menu */
     /* position absolute par rapport à l'article */
@@ -1091,6 +1119,7 @@ iframe[allowfullscreen]{
     left:0;
     background: linear-gradient(#224040, #a3dfdf);
 }
+
 #menuRotate .ombre{
     /* cette div est positionnée au bas de la .masque et donne une impression de reliegf */
     position: absolute;
@@ -1102,6 +1131,7 @@ iframe[allowfullscreen]{
     top: 30px;
     left: 142px;
 }
+
 #menuRotate dl{
     position: relative;
     top: 0;
@@ -1116,6 +1146,7 @@ iframe[allowfullscreen]{
     transform-origin: 50% 120px;
     animation: bounceOut 0.7s ease-in-out;
 }
+
 #menuRotate dt {
     position: absolute;
     bottom: 0;
@@ -1127,9 +1158,11 @@ iframe[allowfullscreen]{
 #menuRotate dd{
     transform: rotate(180deg);
 }
+
 #menuRotate dl:hover{
     transform: rotate(-180deg);
 }
+
 #menuRotate dd a{
     color: white;
     display: block;
@@ -1137,6 +1170,7 @@ iframe[allowfullscreen]{
     height: 24px;
     padding: 3px 0;
 }
+
 #menuRotate dd a:hover{
     background: rgba(255, 255, 255, 0.1);
 }
@@ -1144,6 +1178,7 @@ iframe[allowfullscreen]{
     transform: rotate(-180deg);
     animation: bounceIn 0.7s ease-in-out;
 }
+
 /* la règle @ @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation css */
 @keyframes bounceIn{
     from{

@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +15,7 @@
     <!-- la description qui s'affiche sur un résultat de recherche google -->
     <meta name="description" content="Site de la phase 2 Papaoumar Mbaye 2018/2019">
     <!-- les mots clefs utiles pour les moteurs de recherches -->
-    <meta name="keywords" content="HTML, CSS, papaoumar mbaye, lepoles,pantin">
+    <meta name="keywords" content="HTML, CSS, Mohamed Yessad, lepoles,pantin">
     <!-- l'auteur de la page -->
     <meta name="author" content="Mohamed Yessad">
     <!-- ma feuille de style -->
@@ -21,6 +23,25 @@
 </head>
 
 <body>
+        <!-- <script>
+            var tab = new Array ("M", "O", "H", "A", "M", "E", "D");
+            var i = 0;
+                // x=Array(i);
+                while (i<6){
+                    document.write( tab [i]);
+                    i = i + 1;
+                }
+        </script> -->
+        <script>
+                var tab = new Array ("M", "O", "H", "A", "M", "E", "D");
+                var i = 0;
+                    // x=Array(i);
+                    do {document.write( tab [i]);
+                        i = i + 1;
+                    }
+                    
+                    while (i<6);
+            </script>
 
         <header>
             <div id="logo">
@@ -28,7 +49,6 @@
                     <button type="button"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></button>
                 </a>
                 <img src="img/logo.png" alt="logo">
-
             </div><!-- fin id logo -->
 
             <div id="slogan">
@@ -36,15 +56,12 @@
             </div>
 
             <div id="social">
-
                 <a href="https://www.instagram.com/?hl=fr" target="_blank" aria-hidden="true"><i class="fab fa-instagram"></i></a>
-
                 <a href="http://facebook.fr/" target="_blank" aria-hidden="true"><i class="fab fa-facebook-square"></i></a>
-
             </div><!-- fin id social -->
-
-            <div class="clear"></div
+            <!-- <div class="clear"></div> -->
         </header>
+
         <nav>
             <!-- zone du menu les liens pour passer de pages en pages -->
           <div class="ancreNAV">
@@ -65,7 +82,10 @@
 
         <main><!-- Contenu principal -->
          <h2>Animation en CSS</h2>
+        
+
          <section>
+
              <div class="infoBulle">
                  <p>
                      <a href="#">Passez la souris <span><i class="fas fa-comment-alt"></i>Coucou; je suis une pop-up</span></a>
@@ -97,30 +117,29 @@
              </ul>
          </section>
 
-        <section>
-            <h3>Rotation d'un menu en CSS3</h3>
-            <article id="menuRotate">
-                <dl class="menu">
-                    <dt class="btnRot">Partager</dt>
-                    <dd><a href="#">...</a></dd>
-                    <dd><a href="#">Google +</a></dd>
-                    <dd><a href="#">Facebook</a></dd>
-                    <dd><a href="#">Twitter</a></dd>
-                </dl>
-                <div class="masque"></div>
-                <div class="ombre"></div>
-            </article>
-        </section>
+         <section>
+                <h3>Rotation d'un menu en CSS3</h3>
+                <article id="menuRotate">
+                    <dl class="menu">
+                        <dt class="btnRot">Partager</dt>
+                        <dd><a href="#">...</a></dd>
+                        <dd><a href="#">Google +</a></dd>
+                        <dd><a href="#">Facebook</a></dd>
+                        <dd><a href="#">Twitter</a></dd>
+                    </dl>
+                    <div class="masque"></div>
+                    <div class="ombre"></div>
+                </article>
+            </section>
             <div class="clear"></div>
         </main><!-- fin main -->
+
     <footer>
-
         <!-- pied de page -->
-
     </footer>
-
-
-
+   
+     
+ 
 </body>
 
 </html>
