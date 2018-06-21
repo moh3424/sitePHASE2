@@ -1,0 +1,37 @@
+body{
+    background: pink;
+    margin: 0 auto;/* centrer notre body */
+}
+div{
+    width: 1200px;
+    margin: auto;/* centrer notre div */    
+}
+header{
+    background: yellow;/* couleur du fond de notre header */
+    width: 1200px;/* largeur de header */
+    height: 200px ;/* auteur de header */
+   
+}
+aside{
+    background:green;
+    width: 200px;
+    height: 600px;
+    float: left;
+    
+    
+}
+
+section{
+    background: gray;
+    width: 1000px;
+    height: 600px ;
+    float: right;
+    
+ 
+}
+h2{
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
