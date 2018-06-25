@@ -1,0 +1,52 @@
+@charset "utf-8";
+body{
+    background: pink;
+}
+
+.navbar{
+    background: olive;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.navbar a{
+    color: white;
+    text-align: center;
+    display: block;
+    float: right;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color:yellowgreen;
+    background: rgba( green,red, blue, alpha)
+    
+}
+
+.main{
+    height: 2000px;
+    margin-top: 70px;
+}
+.logo{
+    float: left;
+    position: fixed;
+    background: wheat;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    top:0;
+    z-index: 1;
+    padding: 10px 10px;
+
+}
+.logo a{
+    text-decoration: none;
+}
+.logo a:hover{
+    color:yellowgreen;
+    background: rgba( green,red, blue, alpha)
+}
