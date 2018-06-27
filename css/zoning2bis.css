@@ -1,0 +1,66 @@
+body{
+    background: olive;
+    margin: 0 auto;/* centrer notre body */
+    background: url('../img/index.jpg');
+}
+div{
+    width: 1200px;
+    margin: auto;/* centrer notre div */    
+}
+header{
+    background: yellow;/* couleur du fond de notre header */
+    /* background: url('../img/montagne-plage.jpg'); */
+    width: 1200px;/* largeur de header */
+    height: 200px ;/* auteur de header */
+   
+}
+aside{
+    background:green;
+    width: 200px;
+    height: 600px;
+}
+
+section{
+    background: gray;
+    width: 800px;
+    height: 600px ;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.droite{
+    float: left;
+}
+.gauche{
+    float: left;
+}
+h2{
+    text-align: center;
+}
+
+footer{
+    background: linear-gradient(/* to left, */ #333, #333 50%, #eee 75%, #333 75%);
+    width: 1200px;/* largeur de footer */
+    height: 300px ;/* auteur de footer */ 
+    margin-bottom:25px; 
+    margin: 0 auto;
+}
+headefr{
+    background: yellow;/* couleur du fond de notre header */
+    width: 1200px;/* largeur de header */
+    height: 200px ;/* auteur de header */
+}
+asidef{
+    background:green;
+    width: 200px;
+    height: 200px;
+}
+sectionf{
+    background: gray;
+    width: 800px;
+    height: 200px ;
+    float: left;
+}
+.clear{
+    clear: both;
+}

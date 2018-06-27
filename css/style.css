@@ -217,7 +217,7 @@ footer li {  /* liste li pour le footer bas de page */
 
 /* le retour en haut de page */
 
-button {
+.ancreb{
     font-size: 350%;
     background: transparent;/* l'icône est transparente */
     border: none;

@@ -20,109 +20,93 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
-        <header>
-            <div id="logo">
+    <header>
+        <div id="logo">
+            <a href="#logo">
+                    <span class="ancreb"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></span>
+            </a>
+            <img src="img/logo.png" alt="logo">
+        </div><!-- fin id logo -->
+        <div id="slogan">
+            <a href="index.html" title="Mon premier site en HTML acuueil"><h1>Mon premier site en HTML5 et CSS3</h1></a>
+        </div>
+        <div id="social">
+            <a href="https://www.instagram.com/?hl=fr" target="_blank" aria-hidden="true"><i class="fab fa-instagram"></i></a>
+            <a href="http://facebook.fr/" target="_blank" aria-hidden="true"><i class="fab fa-facebook-square"></i></a>
+        </div><!-- fin id social -->
+        <div class="clear"></div>
+    </header>
+    <nav>
+        <!-- zone du menu les liens pour passer de pages en pages -->
+        <div class="ancreNAV">
+            <a href="index.html" title="Accueil">Accueil</a>
+            <a href="texte.html" title="Texte">Texte</a>
+            <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
+            <a href="image.html" title="Image">Image</a>
+            <a href="position.html" title="Position">Position</a>
+            <a href="zoning.html" title="ZoningTableau">Zoning</a>
+            <a href="tableau.html" title="Tableau" class="active">Tableau</a>
+            <a href="liste.html" title="Liste">Liste</a>
+            <a href="lien_menu.html" title="Lien">Lien</a>
+            <a href="formulaire.html" title="Formulaire">Formulaire</a>
+            <a href="multimedia.html" title="Multimédia">Multimédia</a>
+            <a href="animation.html" title="Animation">Animation</a>
+        </div>   
+    </nav>
+    <main><!-- Début main -->
+        <h2>Un tableau</h2>
+        <section class="tableau">
+            <table border="1">
+                <!-- la légende du tableau -->
+                <caption><i class="fas fa-plane"></i>Vols Paris Rome</caption>
+                    <thead>
+                    <tr> <!-- rangée tu tableau -->
+                        <td>Dates</td> <!-- table data colonnes du tableau -->
+                        <td>02/08/2017</td>
+                        <td>03/08/2017</td>
+                        <td>05/08/2017</td>
+                    </tr>
+                </thead>
+                <tfoot><!-- le pied du tableau -->
+                    <tr>
+                        <td>Dates</td>
+                        <td>02/08/2017</td>
+                        <td>03/08/2017</td>
+                        <td>05/08/2017</td>
+                    </tr>
+                </tfoot>
+                <tbody><!-- le corps du tableau -->
+                    <tr>
+                        <td rowspan="2">Air France</td>
+                        <td>Départ 10 h - Arrivé 13 h</td>
+                        <td>Départ 15 h - Arrivé 18 h</td>
+                        <td>Départ 17 h - Arrivé 20 h</td>
+                    </tr>
+                    <tr>
+                            <!-- <td></td>    -->
+                        <td>200 €</td>
+                        <td>180 €</td>
+                        <td>170 €</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Alitalia</td>
+                        <td>Départ 6 h - Arrivé 9 h</td>
+                        <td>Départ 13 h - Arrivé 16 h</td>
+                        <td>Départ 21 h - Arrivé 00 h</td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td>150 €</td>
+                        <td>160 €</td>
+                        <td>150 €</td>
+                    </tr> 
+                </tbody>
+            </table>
+        </section>                                        
+    </main><!-- fin main -->
+<footer>
 
-                <a href="#logo">
-                    <button type="button"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></button>
-                </a>
-                <img src="img/logo.png" alt="logo">
-
-            </div><!-- fin id logo -->
-
-            <div id="slogan">
-               <a href="index.html" title="Mon premier site en HTML acuueil"><h1>Mon premier site en HTML5 et CSS3</h1></a>
-            </div>
-            <div id="social">
-                <a href="https://www.instagram.com/?hl=fr" target="_blank" aria-hidden="true"><i class="fab fa-instagram"></i></a>
-                <a href="http://facebook.fr/" target="_blank" aria-hidden="true"><i class="fab fa-facebook-square"></i></a>
-            </div><!-- fin id social -->
-
-            <div class="clear"></div>
-        </header>
-
-        <nav>
-            <!-- zone du menu les liens pour passer de pages en pages -->
-          <div class="ancreNAV">
-                <a href="index.html" title="Accueil">Accueil</a>
-                <a href="texte.html" title="Texte">Texte</a>
-                <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
-                <a href="image.html" title="Image">Image</a>
-                <a href="position.html" title="Position">Position</a>
-                <a href="zoning.html" title="ZoningTableau">Zoning</a>
-                <a href="tableau.html" title="Tableau" class="active">Tableau</a>
-                <a href="liste.html" title="Liste">Liste</a>
-                <a href="lien_menu.html" title="Lien">Lien</a>
-                <a href="formulaire.html" title="Formulaire">Formulaire</a>
-                <a href="multimedia.html" title="Multimédia">Multimédia</a>
-                <a href="animation.html" title="Animation">Animation</a>
-          </div>   
-
-        </nav>
-
-        <main><!-- Début main -->
-          <h2>Un tableau</h2>
-          <section class="tableau">
-
-                <table border="1">
-                    <!-- la légende du tableau -->
-                    <caption><i class="fas fa-plane"></i>Vols Paris Rome</caption>
-                     <thead>
-                        <tr> <!-- rangée tu tableau -->
-                            <td>Dates</td> <!-- table data colonnes du tableau -->
-                            <td>02/08/2017</td>
-                            <td>03/08/2017</td>
-                            <td>05/08/2017</td>
-                        </tr>
-                    </thead>
- 
-                    <tfoot><!-- le pied du tableau -->
-                        <tr>
-                            <td>Dates</td>
-                            <td>02/08/2017</td>
-                            <td>03/08/2017</td>
-                            <td>05/08/2017</td>
-                        </tr>
-                    </tfoot>
- 
-                    <tbody><!-- le corps du tableau -->
-                        <tr>
-                            <td rowspan="2">Air France</td>
-                            <td>Départ 10 h - Arrivé 13 h</td>
-                            <td>Départ 15 h - Arrivé 18 h</td>
-                            <td>Départ 17 h - Arrivé 20 h</td>
-                        </tr>
- 
-                        <tr>
-                             <!-- <td></td>    -->
-                            <td>200 €</td>
-                            <td>180 €</td>
-                            <td>170 €</td>
-                        </tr>
- 
-                        <tr>
-                            <td rowspan="2">Alitalia</td>
-                            <td>Départ 6 h - Arrivé 9 h</td>
-                            <td>Départ 13 h - Arrivé 16 h</td>
-                            <td>Départ 21 h - Arrivé 00 h</td>
-                        </tr>
- 
-                        <tr>
-                            <!-- <td></td> -->
-                            <td>150 €</td>
-                            <td>160 €</td>
-                            <td>150 €</td>
-                        </tr> 
-                    </tbody>
-                </table>
-            </section>                                        
-
- 
-        </main><!-- fin main -->
-    <footer>
-    
-    </footer>
+</footer>
 
 </body>
 </html>

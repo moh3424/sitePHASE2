@@ -1,0 +1,140 @@
+@charset "utf-8";
+body{
+    background: pink;
+    font-family: 'Galada', cursive;
+}
+.tw, .fc, .gplus, .yt{/* les class des reseaux sociaux */
+    position: fixed;
+    z-index: 10;
+    font-size: 3em;
+    color:blue;
+}
+i.fc{/* positioner les elements i de la class fc */
+    top:35%;
+    left:5%;
+}
+i.gplus{/* positioner les element i de la class gplus */
+    top:50%;
+    left:5%;
+}
+i.yt{/* positioner les element i de la class yt */
+    top:45%;
+    left:5%;
+}
+i.tw{/* positioner les element i de la class tw */
+    top:40%;
+    left:5%;
+}
+.navbar{/* fixer la navbar au aut de la page */
+    background: skyblue;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 100px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    z-index: 1;
+}
+.navbar a{
+    /* color: black; */
+    text-align: center;
+    font-family: 'Galada', cursive;
+    font-family: 'IM Fell English SC', serif;
+    display: block;
+    float: right;
+    padding-right: 5%;
+    text-transform: uppercase;
+}
+.navbar a:hover{/* annimation des element a de la navbar */
+    color:yellowgreen;
+    background: rgba( green,red, blue, alpha)
+}
+.main{
+    margin: 150px auto;
+    background: green;
+    width: 1000px;
+    height: 1000px;
+}
+.blanc{
+    background: white;
+    width: 96%;/* la largeur en pourcentage */
+    height: 97%;/* la hauteur en pourcentage */
+    position: relative;/* position de l'element par rapport au l'element parent */
+    top: 1.5%;
+    left: 2%;
+}
+.logo{
+    position: fixed;/* fixer la position de logo par rapport a la page body*/
+    text-align: center;/* centrer le text dans contenaire */
+    height: 30px;/* la hauteur */
+    width: 20%;/* la largeur en pourcentage */
+    top:0;
+    z-index: 2;
+    padding: 5px 5px;
+}
+.logo a{/* cible a des logo */
+    text-decoration: none;/* permet de ne pas décorer le text */
+}
+.logo a:hover{/* annimer le a des logo */
+    color:yellowgreen;/* coloration du text */
+    background: rgba( green,red, blue, alpha)
+}
+.navbar i{
+    font-size: 3em;
+    position: relative;
+    padding-left: 5%;
+    left:50%;
+    top: 25%;
+}
+div.orange, div.violet, div.rouge  {
+    height: 31%;
+    width: 90%;
+    margin: 0 auto;
+}
+h2{
+    position: relative;
+    left: 2%;
+    top : 2%;
+}
+.orange{
+    background: orange;
+    position: relative;
+    top:10px;
+    border-bottom-right-radius: 15%;
+}
+p{
+    position: relative;
+    left:2%;
+}
+.violet{
+    background: violet;
+    bottom:15px;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 75%;
+}
+form{
+    position: relative;
+    left: 35%;
+    bottom: 90%;
+}
+
+.rouge{
+    background: red;
+    border-bottom-right-radius: 15%;
+
+    /* top:10px; */
+}
+.positions{/* positioner le p de la class rouge */
+    position: relative;
+    left: 60%;
+    bottom: 90%;
+}
+footer{
+    background: skyblue;
+    width: 100%;
+    height: 100px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    /* margin-bottom: 150px; */
+}
